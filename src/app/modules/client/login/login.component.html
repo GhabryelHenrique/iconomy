@@ -1,0 +1,14 @@
+<section class="container">
+  <div class="headerTitle">
+    <img src="assets/img/logo.png" alt="Logo" class="logo">
+    <h1>Login</h1>
+  </div>
+
+  <form [formGroup]="loginForm" (onSubmit)="logar()">
+    <input type="text" formControlName="email" pInputText placeholder="E-mail">
+    <input type="password" formControlName="password" pInputText placeholder="Senha">
+
+    <button type="submit">Entrar</button>
+
+  </form>
+</section>
